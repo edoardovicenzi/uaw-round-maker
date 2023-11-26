@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <title>UAW Round Maker</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <h1>This tool creates rounds for UAW</h1>
+        <form class="round-form">
+            <div class="input-box">
+                <input type="text" name="playerCount" placeholder="Insert how many players!" id="input-player-count">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="map-size" id="input-map-size" placeholder="Insert map size">
+                <i class='bx bxs-compass'></i>
+            </div>
+            <h2>Mods</h2>
+            <div class="mods">
+            <label for="input-human-mod"><input type="checkbox" name="input-human-mod" id="input-human-mod"
+                    value="humanity">Human faction is allowed?</label>
+            <a href="https://www.moddb.com/mods/human-resurgence">Learn more</a>
+            </div>
+            <button class="btn" id="btn-new-round">New Round</button>
+        </form>
+        <div class="response" id="response"></div>
+
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
