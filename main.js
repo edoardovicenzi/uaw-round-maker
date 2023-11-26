@@ -1,5 +1,5 @@
-import { maps } from "./maps.js"
-import { FACTIONS } from "./factions.js"
+import { maps } from "./assets/maps.js"
+import { FACTIONS } from "./assets/factions.js"
 class RoundSettings {
     constructor(playerCount = 2, mapSize = 2, allowedFactions = FACTIONS) {
         this.factions = []
